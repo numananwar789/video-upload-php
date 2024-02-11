@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS videos_db;
+
+
+CREATE TABLE video_submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    video_url VARCHAR(255) NOT NULL,
+    file_name VARCHAR(255) NOT NULL,
+    user_name VARCHAR(100) NOT NULL,
+    user_email VARCHAR(100) NOT NULL,
+    submission_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

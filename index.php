@@ -9,6 +9,8 @@
     <!-- Add the Toastify CSS and JS links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -60,7 +62,10 @@
     ?>
     <!-- Success or Error Message showing in toast ends -->
 
-    <h2 class="mb-4">Video Submission Form</h2>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Video Submission Form</h2>
+        <button class="btn btn-sm btn-outline-success">View Video List</button>
+    </div>
 
     <form action="process.php" method="post" enctype="multipart/form-data" id="videoForm">
         <div class="form-group">
@@ -69,7 +74,7 @@
         </div>
 
         <div class="form-group">
-            <label for="video_file">Upload Video:</label>
+            <label for="video_file">Upload Video: <small class="text-muted">(max upload size 2 mb)</small></label>
             <input type="file" class="form-control-file" name="fileToUpload" accept="video/*">
             <small class="form-text text-muted">Accepted formats: mp4, avi, mkv, mov, wmv</small>
         </div>
@@ -84,7 +89,7 @@
             <input type="email" class="form-control" name="user_email" placeholder="Enter your email" >
         </div>
 
-        <input type="submit" value="Submit" class="btn btn-primary">
+        <input type="submit" value="Submit" class="btn btn-sm btn-primary">
     </form>
 </div>
 

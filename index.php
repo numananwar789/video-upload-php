@@ -64,7 +64,7 @@
 
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2>Video Submission Form</h2>
-        <button class="btn btn-sm btn-outline-success">View Video List</button>
+        <a href="videos_list.php" class="btn btn-sm btn-outline-success">View Video List</a>
     </div>
 
     <form action="process.php" method="post" enctype="multipart/form-data" id="videoForm">

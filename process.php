@@ -21,10 +21,11 @@ if ( $_SERVER[ 'REQUEST_METHOD' ] === 'POST' ) {
         // Move the uploaded video file to the desired directory
         $target_dir = 'uploads/';
         $target_file = $target_dir . basename( $_FILES[ 'fileToUpload' ][ 'name' ] );
+        $target_file_name = basename( $_FILES[ 'fileToUpload' ][ 'name' ] );
 
         if ( move_uploaded_file( $_FILES[ 'fileToUpload' ][ 'tmp_name' ], $target_file ) ) {
             // File uploaded successfully, now insert data into the database
-            $sql = "INSERT INTO video_submissions (video_url, user_name, user_email, file_name) VALUES ('$videoUrl', '$userName', '$userEmail', '$target_file')";
+            $sql = "INSERT INTO video_submissions (video_url, user_name, user_email, file_name) VALUES ('$videoUrl', '$userName', '$userEmail', '$target_file_name')";
 
             if ( $conn->query( $sql ) === TRUE ) {
                 // Insert successful

@@ -16,13 +16,17 @@
 <body>
 
     <div class="container mt-5">
-        <h2>Video List</h2>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Video List</h2>
+            <a href="index.php" class="btn btn-sm btn-outline-primary">Back to Form</a>
+        </div>
         <table id="videoTable" class="table table-striped">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Video URL</th>
                     <th>Video Name</th>
+                    <th>Video</th>
                     <th>User Name</th>
                     <th>User Email</th>
                 </tr>
@@ -42,6 +46,7 @@
                     echo "<td>" . $row["id"] . "</td>";
                     echo "<td>" . $row["video_url"] . "</td>";
                     echo "<td>" . $row["file_name"] . "</td>";
+                    echo "<td><video width='150' height='100' controls><source src='uploads/{$row["file_name"]}' type='video/mp4'>Your browser does not support the video tag.</video></td>";
                     echo "<td>" . $row["user_name"] . "</td>";
                     echo "<td>" . $row["user_email"] . "</td>";
                     echo "</tr>";

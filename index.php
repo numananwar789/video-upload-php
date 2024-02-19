@@ -91,6 +91,58 @@
 
         <input type="submit" value="Submit" class="btn btn-sm btn-primary">
     </form>
+
+    <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="url-tab" data-toggle="tab" href="#url" role="tab" aria-controls="url" aria-selected="true">Video URL</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="upload-tab" data-toggle="tab" href="#upload" role="tab" aria-controls="upload" aria-selected="false">Upload Video</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="url" role="tabpanel" aria-labelledby="url-tab">
+            <form action="process.php" method="post" id="urlForm" class="mt-3">
+                <div class="form-group">
+                    <label for="video_url">Video URL:</label>
+                    <input type="url" class="form-control" name="video_url" placeholder="Enter video URL">
+                </div>
+
+                <div class="form-group">
+                    <label for="user_name">Your Name:</label>
+                    <input type="text" class="form-control" name="user_name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="user_email">Your Email:</label>
+                    <input type="email" class="form-control" name="user_email" placeholder="Enter your email">
+                </div>
+
+                <input type="submit" value="Submit" class="btn btn-sm btn-primary">
+            </form>
+        </div>
+        <div class="tab-pane fade" id="upload" role="tabpanel" aria-labelledby="upload-tab">
+            <form action="process.php" method="post" enctype="multipart/form-data" id="uploadForm" class="mt-3">
+                <div class="form-group">
+                    <label for="video_file">Upload Video: <small class="text-muted">(max upload size 2 mb)</small></label>
+                    <input type="file" class="form-control-file" name="fileToUpload" accept="video/*">
+                    <small class="form-text text-muted">Accepted formats: mp4, avi, mkv, mov, wmv</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="user_name">Your Name:</label>
+                    <input type="text" class="form-control" name="user_name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="user_email">Your Email:</label>
+                    <input type="email" class="form-control" name="user_email" placeholder="Enter your email">
+                </div>
+
+                <input type="submit" value="Submit" class="btn btn-sm btn-primary">
+            </form>
+        </div>
+    </div> -->
 </div>
 
 <!-- jQuery -->
